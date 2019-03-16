@@ -1,2 +1,6 @@
 #!/bin/bash
-jq -r '.version.ref' > $1/version
+version=$(jq -r '.version.version')
+echo "$ref" > $1/version
+
+
+echo "{\"version\":{\"version\":\"$version\"},\"metadata\":[]}"
