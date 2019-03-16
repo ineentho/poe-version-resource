@@ -1,0 +1,2 @@
+#!/bin/bash
+jq -r '.version.ref' > $1/version
