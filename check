@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eu
+
+version=$(echo -n -e '\x01\x06' | nc -q 3 spectrum-patch-ipv4.pathofexile.com 12995 | cut -d "/" -f 6 | iconv -f UTF-16BE)
+
+echo "[{\"version\":\"$version\"}]"
