@@ -1,4 +1,4 @@
-FROM debian:9.9-slim@sha256:9490c476443a3869e39c2897fa66c91daf5dcbbfca53c976dac7bbdc45775b28
+FROM debian:9.13-slim@sha256:abaa313c7e1dfe16069a1a42fa254014780f165d4fd084844602edbe29915e70
 
 RUN apt-get update && \
     apt-get install -y netcat jq && \
